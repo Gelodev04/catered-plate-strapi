@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "top_bars",
+  "info": {
+    "singularName": "top-bar",
+    "pluralName": "top-bars",
+    "displayName": "Top Bar"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "opening_hours": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    }
+  }
+}
