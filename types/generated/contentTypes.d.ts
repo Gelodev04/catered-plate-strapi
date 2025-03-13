@@ -505,6 +505,7 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
 export interface ApiEventEvent extends Struct.SingleTypeSchema {
   collectionName: 'events';
   info: {
+    description: '';
     displayName: 'Event';
     pluralName: 'events';
     singularName: 'event';
@@ -513,7 +514,6 @@ export interface ApiEventEvent extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    cater: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -526,6 +526,7 @@ export interface ApiEventEvent extends Struct.SingleTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    where: Schema.Attribute.JSON;
   };
 }
 
